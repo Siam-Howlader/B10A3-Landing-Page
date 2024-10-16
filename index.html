@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing_page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="manrope">
+    <header class="lg:pt-14 lg:px-32 sm:pt-3 sm:px-3 lg:w-auto sm:w-full">
+        <nav class="">
+            <div class="navbar bg-base-100 flex lg:justify-between sm:justify-between items-center">
+                <div class="navbar-start lg:w-auto sm:w-full lg:justify-between sm:justify-between sm:flex-row-reverse">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-auto p-0 shadow">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Portfolio</a></li>
+                            <li><a href="">Blogs</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="btn btn-ghost font-extrabold text-3xl text-[#212121]"><button
+                                class="btn btn-circle bg-[#ABEF5F] -rotate-45 border-none">
+                                <i class="fa-solid fa-arrow-right text-2xl"></i>
+                            </button>
+                            Rinterio</a>
+                    </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="" class="font-extrabold text-[#494949]">Home</a></li>
+                        <li><a href="" class="text-[#737373]">Services</a></li>
+                        <li><a href="" class="text-[#737373]">Portfolio</a></li>
+                        <li><a href="" class="text-[#737373]">Blogs</a></li>
+                        <li><a href="" class="text-[#737373]">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end sm:hidden lg:block w-auto">
+                    <button class="btn btn-circle mr-6">
+                        <a href="" class="text-xl"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </button>
+                    <button class="btn btn-circle mr-6">
+                        <a href="" class="text-xl"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </button>
+                    <a class="btn bg-[#ABEF5F] font-extrabold text-xl py-auto px-5 rounded-[32px]">Book Consult<img
+                            src="assets/rarrow.png" alt="" class="-rotate-45 lg:inline-block ml-1 w-2/12 my-auto"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
